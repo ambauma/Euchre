@@ -15,6 +15,9 @@ case class Card(suit: Suit, name: Name) extends Ordered[Card] {
   }
 
   override def toString: String = {
-    return name.toString + suit.toString
+    this.name match {
+      case Name.Joker => name.toString
+      case _ => name.toString + suit.toString
+    }
   }
 }

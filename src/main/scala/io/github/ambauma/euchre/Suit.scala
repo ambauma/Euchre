@@ -1,15 +1,16 @@
+// Copyright (C) 2017-2018 - Andrew Baumann
+// All rights reserved.
 package io.github.ambauma.euchre
-import io.github.ambauma.euchre
 
 object Suit extends Enumeration {
   type Suit = Value
 
-  val Clubs = Value(1, "C")
-  val Spades = Value(2, "S")
-  val Diamonds = Value(3, "D")
-  val Hearts = Value(4, "H")
+  val Clubs = Value("C")
+  val Spades = Value("S")
+  val Diamonds = Value("D")
+  val Hearts = Value("H")
 
   def all() : Iterable[Suit] = {
-    return Iterable[Suit](Clubs, Spades, Diamonds, Hearts)
+    Iterable[Suit](Clubs, Spades, Diamonds, Hearts)
   }
 }

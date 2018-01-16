@@ -7,3 +7,17 @@ scalaVersion := "2.12.4"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % "test"
 
 addSbtPlugin("com.artima.supersafe" % "sbtplugin" % "1.1.3")
+
+scalastyleConfig := file("src/test/resources/scalastyle-config.xml")
+
+scalastyleFailOnError := true
+
+scalastyleFailOnWarning := true
+
+coverageEnabled := true
+
+coverageMinimum := 100
+
+coverageFailOnMinimum := false
+
+coverageHighlighting := true

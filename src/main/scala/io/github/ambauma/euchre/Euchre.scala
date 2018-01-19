@@ -1,5 +1,3 @@
-// Copyright (C) 2017-2018 - Andrew Baumann
-// All rights reserved.
 package io.github.ambauma.euchre
 
 import io.github.ambauma.euchre.CardSet._

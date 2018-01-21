@@ -22,7 +22,10 @@ object CreateSetSpecification extends Properties("Euchre") {
   }
 
   def everyNormalCard() : Iterable[Card] = {
-    everyNormalCardOf(Suit.Clubs) ++ everyNormalCardOf(Suit.Spades) ++ everyNormalCardOf(Suit.Diamonds) ++ everyNormalCardOf(Suit.Hearts)
+    everyNormalCardOf(Suit.Clubs) ++
+      everyNormalCardOf(Suit.Spades) ++
+      everyNormalCardOf(Suit.Diamonds) ++
+      everyNormalCardOf(Suit.Hearts)
   }
 
   def everyNormalCardOf(suit : Suit.Value) : Iterable[Card] = {

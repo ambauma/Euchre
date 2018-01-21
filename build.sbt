@@ -20,6 +20,6 @@ coverageEnabled := true
 
 coverageMinimum := 100
 
-coverageFailOnMinimum := false
+coverageFailOnMinimum := true
 
 coverageHighlighting := true

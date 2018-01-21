@@ -12,5 +12,5 @@ val set = Euchre.createSet(Array(CardSet.IncludeEights, CardSet.IncludeSevens))
 ## Definition of Done
  * Does the build pass (ScalaStyle, sCoverage)?
  * Has ScalaDoc been written for all public functions?
- * Are non-public functions hidden?
  * Is code coverage at 100%?
+ * Review the code for readability

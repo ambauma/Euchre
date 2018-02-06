@@ -1,11 +1,9 @@
 package io.github.ambauma.euchre
 
-import org.scalacheck._
-import org.scalacheck.Gen.pick
-import org.scalacheck.{Gen, Properties}
 import org.scalacheck.Prop._
+import org.scalacheck.{Gen, Properties}
 
-object CreateSetSpecification extends Properties("Euchre") {
+object CreateSetCheck extends Properties("Euchre") {
   val standardSet : Iterable[Card] = everyNormalCard
 
   val possibleChoices = Gen.oneOf(Iterable[CardSet.Value](),

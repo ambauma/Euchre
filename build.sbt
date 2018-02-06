@@ -20,7 +20,7 @@ scalastyleFailOnError := true
 
 scalastyleFailOnWarning := true
 
-coverageEnabled := true
+coverageEnabled.in(Test, test) := true
 
 coverageMinimum := 100
 
